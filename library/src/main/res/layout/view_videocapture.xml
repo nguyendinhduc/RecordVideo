@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/videocapture_container_rl"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:keepScreenOn="true">
+
+    <com.jmolsmobile.landscapevideocapture.view.SurfaceCamera
+        android:id="@+id/videocapture_preview_sv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center" />
+
+    <ImageView
+        android:id="@+id/videocapture_preview_iv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom">
+
+        <TextView
+            android:id="@+id/txtLimitDuration"
+            android:layout_width="wrap_content"
+            android:layout_height="56dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:text="-15:00"
+
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/videocapture_recordbtn_iv"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/states_btn_capture"
+            android:clickable="true" />
+
+        <ImageView
+            android:id="@+id/btnFacing"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="8dp"
+
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_camera_back" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/llConfirm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#125688"
+        android:visibility="invisible">
+
+        <ImageView
+            android:id="@+id/videocapture_acceptbtn_iv"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:background="@drawable/states_btn_acceptdecline"
+            android:clickable="true"
+            android:padding="8dp"
+            android:src="@drawable/btn_accept" />
+
+        <ImageView
+            android:id="@+id/videocapture_declinebtn_iv"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_alignParentRight="true"
+            android:layout_weight="1"
+            android:background="@drawable/states_btn_acceptdecline"
+            android:clickable="true"
+            android:padding="8dp"
+            android:src="@drawable/btn_decline" />
+    </LinearLayout>
+
+</FrameLayout>
