@@ -7,7 +7,7 @@
     android:fitsSystemWindows="true"
     android:keepScreenOn="true">
 
-    <com.jmolsmobile.landscapevideocapture.view.SurfaceCamera
+    <com.ducnd.recordvideo.view.SurfaceCamera
         android:id="@+id/videocapture_preview_sv"
         android:layout_width="match_parent"
         android:layout_height="match_parent"

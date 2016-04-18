@@ -16,7 +16,7 @@
 -->
 <resources>
 
-    <string name="app_name">Landscape VideoCapture</string>
+    <string name="app_name">Record Video</string>
 
     <string name="capture_video">Capture video</string>
 
